@@ -1,3 +1,9 @@
+body {
+    margin: 1rem 1rem;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     display:flex;
     justify-content: space-between;
@@ -6,6 +12,7 @@ header {
 header h1 {
     color: red;
     margin: 0;
+    flex:1;
 }
 header nav a {
     color: rgb(111, 111, 111);
@@ -19,6 +26,11 @@ header .user-panel {
     display: flex;
     align-items: center;
     gap: .5rem;
+    flex:1;
+    justify-content: flex-end;
+}
+.search-icon {
+    margin-left: -2rem;
 }
 .user-panel input {
      padding: .3rem;
@@ -65,11 +77,120 @@ button {
     background: red;
     border: 0;
     padding: .6rem 2.1rem;
+    font-size: 1.2rem;
     border-radius: .5rem;
     color: white;
-    font-size: 1.2rem;
 }
 button i {
     margin-left: -1rem;
     margin-right: .5rem;
+}
+.suggestion-row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion-row-title a {
+    text-decoration: none;
+    color: black;
+}
+
+.suggestion-movies {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.movie-card {
+    width: 30%;
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.movie-card h4 {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.movie-duration {
+   font-weight: bold;
+   font-size: 13px;
+
+}
+
+.movie-card button {
+    padding: .5rem 2rem;
+    font-size: 1rem;
+}
+.movie-info {
+    margin-bottom: 1rem;
+}
+.content-rating {
+    font-size: 11px;
+    font-weight: bold;
+} 
+
+footer {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+footer h4 {
+    font-weight: lighter;
+}
+.footer-left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-nav a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-right-side {
+    display: flex;
+    gap: 3rem;
+}
+
+.footer-follow {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logos {
+    display: flex;
+    gap: .5rem;
+}
+
+.red {
+    color:#cd201f;
+}
+.darkblue {
+    color:#3b5998;
+}
+.blue {
+    color: #26a7de;
+}
+
+.footer-apps  {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-apps-img {
+    display: flex;
+    gap: .5rem;
+}
+
+.footer-apps-img img{
+    width: 8rem;
 }
