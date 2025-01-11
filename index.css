@@ -33,19 +33,26 @@ header .user-panel {
     margin-left: -2rem;
 }
 .user-panel input {
-     padding: .3rem;
+     padding: .3rem 1.8rem .3rem .3rem;
      width: 7rem;
+      
+    
 }
+
+
 .user-panel img {
-    border-radius: 100px;
+    border-radius: 50%;
     width: 2.5rem;
 }
 .user-panel {
     display: flex;
     align-items: center;
+    
+   
 }
 main {
     aspect-ratio: 5/3;
+    width: 100%;
     border: 1px solid black;
     margin: 2rem auto;
     padding: 1rem;
@@ -105,7 +112,8 @@ button i {
 .movie-card {
     width: 30%;
     border: 1px solid black;
-    padding: 1rem;
+    padding: 2rem 1rem;
+    
 }
 
 .movie-card h4 {
@@ -193,4 +201,42 @@ footer h4 {
 
 .footer-apps-img img{
     width: 8rem;
+}
+@media (max-width: 500px) {
+    body {
+        min-width: 300px;
+    }
+    header {
+        flex-wrap: wrap;
+    }
+    
+    header nav {
+        order: 1;
+        width: 100%;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    header.user-panel {
+    order: 2;
+    }
+    header h1 {
+    order: 0;
+    }
+
+    footer {
+      flex-direction: column;
+    }
+    .footer-nav {
+        justify-content: center;
+    }
+    .movie-card button {
+        padding: .5rem 1.5rem;
+        font-size: .6rem;
+    }
+    .movie-duration {
+       font-size: 11px; 
+    }
+    .movie-hour {
+        font-size: 13px;
+    }
 }
